@@ -1,0 +1,14 @@
+{
+    "pm.storm.svc.genericbool":
+    {
+        "id":"0x3001",
+        "name":"Generic bool",
+        "superclasses":[],
+        "author":"Michael Andersen",
+        "attributes":{
+          "pm.storm.attr.bool":{
+            "desc":"The value of the boolean"
+          }
+        }
+    }
+}
