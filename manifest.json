@@ -1,14 +1,111 @@
 {
-    "pm.storm.svc.genericbool":
-    {
-        "id":"0x3001",
-        "name":"Generic bool",
-        "superclasses":[],
-        "author":"Michael Andersen",
-        "attributes":{
-          "pm.storm.attr.bool":{
-            "desc":"The value of the boolean"
-          }
-        }
+  "pm.storm.svc.genericbool": {
+    "id": "0x3001",
+    "name": "Generic bool",
+    "author": "Michael Andersen",
+    "desc": "An arbitrary boolean service",
+    "attributes": {
+      "pm.storm.attr.bool": {
+        "id": "0x4001",
+        "format": [
+          [
+            "u8",
+            "value",
+            "The value of the boolean"
+          ]
+        ]
+      }
     }
+  },
+  "pm.storm.svc.ss": {
+    "id": "0x3002",
+    "name": "Starter shield",
+    "author": "Michael Andersen",
+    "desc": "Basic starter shield service",
+    "attributes": {
+      "pm.storm.attr.ss.ledflash": {
+        "id": "0x4002",
+        "format": [
+          [
+            "u8",
+            "lednum",
+            "Which led to control 0=red0, 1=red1, 2=green, 3=blue"
+          ],
+          [
+            "u8",
+            "numflashes",
+            "How many times to flash"
+          ]
+        ]
+      },
+      "pm.storm.attr.ss.ledonoff": {
+        "id": "0x4003",
+        "format": [
+          [
+            "u8",
+            "lednum",
+            "Which led to control 0=red0, 1=red1, 2=green, 3=blue"
+          ],
+          [
+            "s16",
+            "duration",
+            "Duration in ms to stay on for. 0 is off, <0 is infinity"
+          ]
+        ]
+      },
+      "pm.storm.attr.ss.buzz": {
+        "id": "0x4004",
+        "format": [
+          [
+            "u16",
+            "delay",
+            "The number of ticks in a given pulse"
+          ],
+          [
+            "u16",
+            "duration",
+            "The length of time to buzz"
+          ]
+        ]
+      }
+    }
+  },
+  "pm.storm.svc.ledpanel": {
+    "id": "0x3003",
+    "name": "LED Panel",
+    "author": "Michael Andersen",
+    "desc": "LED panel light control",
+    "attributes": {
+      "pm.storm.attr.ledpanel.flash": {
+        "id": "0x4005",
+        "format": [
+          [
+            "u8",
+            "lednum",
+            "Which led to control 1=red, 2=green, 4=blue, combinations allowed"
+          ],
+          [
+            "u8",
+            "numflashes",
+            "How many times to flash"
+          ]
+        ],
+        "pm.storm.attr.ledpanel.onoff": {
+          "id": "0x4006",
+          "format": [
+            [
+              "u8",
+              "lednum",
+              "Which led to control 1=red, 2=green, 4=blue, combinations allowed"
+            ],
+            [
+              "s16",
+              "duration",
+              "Duration in ms to stay on for. 0 is off, <0 is infinity"
+            ]
+          ]
+        }
+      }
+    }
+  }
 }
