@@ -1,4 +1,22 @@
 {
+  "pm.storm.svc.metadata": {
+    "id": "0x3000",
+    "name": "Device metadata",
+    "author": "Michael Andersen",
+    "desc": "Metadata about the device",
+    "attributes": {
+      "pm.storm.attr.meta.id": {
+        "id": "0x4007",
+        "format": [
+          [
+           "str"
+           "name"
+           "The device name, with the length as the first byte"
+          ]
+          ]
+      }
+    }
+  },
   "pm.storm.svc.genericbool": {
     "id": "0x3001",
     "name": "Generic bool",
