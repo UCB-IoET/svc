@@ -122,6 +122,16 @@
                             "Duration in ms to stay on for. 0 is off, <0 is infinity"
                         ]
                     ]
+                },
+                "pm.storm.attr.ledpanel.motd": {
+                    "id": "0x4008",
+                    "format": [
+                        [
+                            "str",
+                            "motd",
+                            "A message of the day with the length as the first byte"
+                        ]
+                    ]
                 }
             }
         }
