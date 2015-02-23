@@ -9,9 +9,9 @@
                 "id": "0x4007",
                 "format": [
                     [
-                        "str",
+                        "pstr",
                         "name",
-                        "The device name, with the length as the first byte"
+                        "The device name, as a pascal string"
                     ]
                 ]
             }
@@ -127,9 +127,9 @@
                     "id": "0x4008",
                     "format": [
                         [
-                            "str",
+                            "pstr",
                             "motd",
-                            "A message of the day with the length as the first byte"
+                            "A message of the day as a pascal string"
                         ]
                     ]
                 }
