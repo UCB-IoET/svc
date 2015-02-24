@@ -7,6 +7,7 @@
         "attributes": {
             "pm.storm.attr.meta.id": {
                 "id": "0x4007",
+                "name": "Device name",
                 "format": [
                     [
                         "pstr",
@@ -25,6 +26,7 @@
         "attributes": {
             "pm.storm.attr.bool": {
                 "id": "0x4001",
+                "name": "Get/Set bool",
                 "format": [
                     [
                         "u8",
@@ -43,6 +45,7 @@
         "attributes": {
             "pm.storm.attr.ss.ledflash": {
                 "id": "0x4002",
+                "name": "Flash LEDs",
                 "format": [
                     [
                         "u8",
@@ -58,6 +61,7 @@
             },
             "pm.storm.attr.ss.ledonoff": {
                 "id": "0x4003",
+                "name": "Turn Leds on/off",
                 "format": [
                     [
                         "u8",
@@ -73,6 +77,7 @@
             },
             "pm.storm.attr.ss.buzz": {
                 "id": "0x4004",
+                "name": "Buzz",
                 "format": [
                     [
                         "u16",
@@ -96,6 +101,7 @@
         "attributes": {
             "pm.storm.attr.ledpanel.flash": {
                 "id": "0x4005",
+                "name": "Flash ledpanel",
                 "format": [
                     [
                         "u8",
@@ -107,32 +113,34 @@
                         "numflashes",
                         "How many times to flash"
                     ]
-                ],
-                "pm.storm.attr.ledpanel.onoff": {
-                    "id": "0x4006",
-                    "format": [
-                        [
-                            "u8",
-                            "lednum",
-                            "Which led to control 1=red, 2=green, 4=blue, combinations allowed"
-                        ],
-                        [
-                            "s16",
-                            "duration",
-                            "Duration in ms to stay on for. 0 is off, <0 is infinity"
-                        ]
+                ]
+            },
+            "pm.storm.attr.ledpanel.onoff": {
+                "id": "0x4006",
+                "name": "Panel on/off",
+                "format": [
+                    [
+                        "u8",
+                        "lednum",
+                        "Which led to control 1=red, 2=green, 4=blue, combinations allowed"
+                    ],
+                    [
+                        "s16",
+                        "duration",
+                        "Duration in ms to stay on for. 0 is off, <0 is infinity"
                     ]
-                },
-                "pm.storm.attr.ledpanel.motd": {
-                    "id": "0x4008",
-                    "format": [
-                        [
-                            "pstr",
-                            "motd",
-                            "A message of the day as a pascal string"
-                        ]
+                ]
+            },
+            "pm.storm.attr.ledpanel.motd": {
+                "id": "0x4008",
+                "name": "Get motd",
+                "format": [
+                    [
+                        "pstr",
+                        "motd",
+                        "A message of the day as a pascal string"
                     ]
-                }
+                ]
             }
         }
     }
