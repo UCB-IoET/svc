@@ -155,7 +155,7 @@
                 "name": "Make coffee",
                 "format": [
                     [
-                        "u8",
+                        "u16",
                         "secH20",
                         "How many seconds to add water"
                     ]
