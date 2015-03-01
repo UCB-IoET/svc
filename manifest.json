@@ -151,7 +151,7 @@
         "desc": "Automatically prepares your coffee",
         "attributes": {
             "pm.storm.attr.nespresso.mkcoffee": {
-                "id": "0x4C0F",
+                "id": "0x4c0f",
                 "name": "Make coffee",
                 "format": [
                     [
@@ -167,7 +167,7 @@
                 ]
             },
             "pm.storm.attr.nespresso.clnself": {
-                "id": "0x4CAF",
+                "id": "0x4caf",
                 "name": "Clean the coffee machine",
                 "format": [
                 ]
