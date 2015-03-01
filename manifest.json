@@ -143,5 +143,35 @@
                 ]
             }
         }
+    },
+    "pm.storm.svc.nespresso": {
+        "id": "0x3004",
+        "name": "Nespresso",
+        "author": "Sam Kumar and Michael Chen and Leonard Truong",
+        "desc": "Automatically prepares your coffee",
+        "attributes": {
+            "pm.storm.attr.nespresso.mkcoffee": {
+                "id": "0x4C0F",
+                "name": "Make coffee",
+                "format": [
+                    [
+                        "u8",
+                        "secH20",
+                        "How many seconds to add water"
+                    ],
+                    [
+                        "u8",
+                        "temp",
+                        "The temperature at which you want your coffee"
+                    ]
+                ]
+            },
+            "pm.storm.attr.nespresso.clnself": {
+                "id": "0x4CAF",
+                "name": "Clean the coffee machine",
+                "format": [
+                ]
+            }
+        }
     }
 }
