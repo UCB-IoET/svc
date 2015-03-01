@@ -158,11 +158,6 @@
                         "u8",
                         "secH20",
                         "How many seconds to add water"
-                    ],
-                    [
-                        "u8",
-                        "temp",
-                        "The temperature at which you want your coffee"
                     ]
                 ]
             },
