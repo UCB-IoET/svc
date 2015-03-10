@@ -180,19 +180,34 @@
                 "format": [
                     [
                         "s16",
-                        "X",
-                        "X Axis"
+                        "aX",
+                        "Accelerometer X Axis"
                     ],
                     [
                         "s16",
-                        "Y",
-                        "Y Axis"
+                        "aY",
+                        "Accelerometer Y Axis"
                     ],
                     [
                         "s16",
-                        "Z",
-                        "Z Axis"
-                    ]
+                        "aZ",
+                        "Accelerometer Z Axis"
+                    ],
+                    [
+                        "s16",
+                        "mX",
+                        "Magnetometer X Axis"
+                    ],
+                    [
+                        "s16",
+                        "mY",
+                        "Magnetometer Y Axis"
+                    ],
+                    [
+                        "s16",
+                        "mZ",
+                        "Magnetometer Z Axis"
+                    ],
                 ]
             }
         }
