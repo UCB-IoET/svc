@@ -164,7 +164,35 @@
             "pm.storm.attr.nespresso.clnself": {
                 "id": "0x4caf",
                 "name": "Clean the coffee machine",
+                "format": []
+            }
+        }
+    },
+    "pm.storm.svc.accelerometer": {
+        "id": "0x3005",
+        "name": "Accelerometer",
+        "author": "Michael Andersen",
+        "desc": "Gives a stream of accelerometer data",
+        "attributes": {
+            "pm.storm.attr.accelerometer.telemetry": {
+                "id": "0x4009",
+                "name": "Telemetry",
                 "format": [
+                    [
+                        "s16",
+                        "X",
+                        "X Axis"
+                    ],
+                    [
+                        "s16",
+                        "Y",
+                        "Y Axis"
+                    ],
+                    [
+                        "s16",
+                        "Z",
+                        "Z Axis"
+                    ]
                 ]
             }
         }
