@@ -260,6 +260,17 @@
                         "Expected chunks"
                     ]
                 ]
+            },
+            "pm.storm.attr.shell.init": {
+                "id": "0x400d",
+                "name": "Init",
+                "format": [
+                    [
+                        "u8",
+                        "total",
+                        "Expected chunks"
+                    ]
+                ]
             }
         }
     }
