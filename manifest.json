@@ -211,5 +211,56 @@
                 ]
             }
         }
+    },
+    "pm.storm.shell": {
+        "id": "0x3006",
+        "name": "Shell",
+        "author": "Michael Andersen",
+        "desc": "Allows execution of Lua",
+        "attributes": {
+            "pm.storm.attr.shell.setchunk": {
+                "id": "0x400a",
+                "name": "SetChunk",
+                "format": [
+                    [
+                        "u8",
+                        "num",
+                        "Chunk Number"
+                    ],
+                    [
+                        "pstr",
+                        "content",
+                        "Chunk Content"
+                    ]
+                ]
+            },
+            "pm.storm.attr.shell.verify": {
+                "id": "0x400b",
+                "name": "Verify",
+                "format": [
+                    [
+                        "u8",
+                        "total",
+                        "Expected chunks"
+                    ],
+                    [
+                        "pstr",
+                        "missing",
+                        "First 10 missing chunks"
+                    ]
+                ]
+            },
+            "pm.storm.attr.shell.execute": {
+                "id": "0x400c",
+                "name": "Execute",
+                "format": [
+                    [
+                        "u8",
+                        "total",
+                        "Expected chunks"
+                    ]
+                ]
+            }
+        }
     }
 }
