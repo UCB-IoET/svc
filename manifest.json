@@ -273,5 +273,94 @@
                 ]
             }
         }
+    },
+    "pm.storm.blipstats": {
+        "id": "0x3007",
+        "name": "BlipStats",
+        "author": "Michael Andersen",
+        "desc": "Gives the blip statistics of the node",
+        "attributes": {
+            "pm.storm.attr.blipstats": {
+                "id": "0x400e",
+                "name": "Stats",
+                "format": [
+                    [
+                        "u16",
+                        "sent",
+                        "Total IP sent"
+                    ],
+                    [
+                        "u16",
+                        "forwarded",
+                        "Total IP forwarded"
+                    ],
+                    [
+                        "u8",
+                        "rx_drop",
+                        "L2 frags dropped due to 6lowpan failures"
+                    ],
+                    [
+                        "u8",
+                        "tx_drop",
+                        "L2 frags dropped due to link failures"
+                    ],
+                    [
+                        "u8",
+                        "fw_drop",
+                        "L2 frags dropped when forwarding"
+                    ],
+                    [
+                        "u8",
+                        "rx_total",
+                        "L2 frags received"
+                    ],
+                    [
+                        "u8",
+                        "encfail",
+                        "frags dropped due to send queue"
+                    ],
+                    [
+                        "u8",
+                        "fragpool",
+                        "free fragments in pool"
+                    ],
+                    [
+                        "u8",
+                        "sendinfo",
+                        "free sendinfo structs"
+                    ],
+                    [
+                        "u8",
+                        "sendentry",
+                        "free sendentry structs"
+                    ],
+                    [
+                        "u8",
+                        "sndqueue",
+                        "free send queue entries"
+                    ],
+                    [
+                        "u8",
+                        "_",
+                        "reserved"
+                    ],
+                    [
+                        "u16",
+                        "heapfree",
+                        "free space in the heap"
+                    ],
+                    [
+                        "u16",
+                        "udp_sent",
+                        "sent udp packets"
+                    ],
+                    [
+                        "u16",
+                        "udp_rcvd",
+                        "received udp packets"
+                    ]
+                ]
+            }
+        }
     }
 }
