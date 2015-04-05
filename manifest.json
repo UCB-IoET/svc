@@ -290,7 +290,6 @@
                         "Total IP sent"
                     ],
                     [
-                    
                         "u16",
                         "forwarded",
                         "Total IP forwarded"
