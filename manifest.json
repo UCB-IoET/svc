@@ -400,7 +400,7 @@
                         "0=Not Occupied, 1=Occupied"
                     ]
                 ]
-            },
+            }
         }
     }
 }
