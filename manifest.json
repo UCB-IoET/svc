@@ -126,6 +126,7 @@
                     ],
                     [
                         "s16",
+                        "duration",
                         "Duration in ms to stay on for. 0 is off, <0 is infinity"
                     ]
                 ]
@@ -288,6 +289,7 @@
                         "sent",
                         "Total IP sent"
                     ],
+                    [
                     
                         "u16",
                         "forwarded",
