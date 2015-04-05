@@ -126,7 +126,6 @@
                     ],
                     [
                         "s16",
-                        "duration",
                         "Duration in ms to stay on for. 0 is off, <0 is infinity"
                     ]
                 ]
@@ -289,7 +288,7 @@
                         "sent",
                         "Total IP sent"
                     ],
-                    [
+                    
                         "u16",
                         "forwarded",
                         "Total IP forwarded"
@@ -361,6 +360,47 @@
                     ]
                 ]
             }
+        }
+    },
+    "pm.storm.pecs.proxy": {
+        "id": "0x3008",
+        "name": "Proxy Firestorm for PECS Board",
+        "author": "Leonard Truong, Sam Kumar, Michael Chen",
+        "desc": "Proxy board that communicates with the PECS board via reliable network queue",
+        "attributes": {
+            "pm.storm.attr.pecs.fans": {
+                "id": "0x400f",
+                "name": "Fans",
+                "format": [
+                    [
+                        "u8",
+                        "state",
+                        "0=OFF, 1=LOW, 2=MEDIUM, 3=HIGH"
+                    ]
+                ]
+            },
+            "pm.storm.attr.pecs.heaters": {
+                "id": "0x4010",
+                "name": "Heaters",
+                "format": [
+                    [
+                        "u8",
+                        "state",
+                        "0=OFF, 1=ON, 2=TOGGLE"
+                    ]
+                ]
+            },
+            "pm.storm.attr.pecs.occupancy": {
+                "id": "0x4011",
+                "name": "Occupancy",
+                "format": [
+                    [
+                        "u8",
+                        "state",
+                        "0=Not Occupied, 1=Occupied"
+                    ]
+                ]
+            },
         }
     }
 }
