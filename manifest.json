@@ -403,5 +403,24 @@
                 ]
             }
         }
+    },
+    "pm.storm.smart_fan.fan_speed": {
+        "id": "0x3009",
+        "name": "Smart Fan",
+        "author": "Romi Phadte, Cesar Armando Torres, Michael Ho, Aparna Dhinakaran",
+        "desc": "Fan with variable speed",
+        "attributes": {
+            "pm.storm.attr.smartfan.speed": {
+                "id": "0x4012",
+                "name": "Fan",
+                "format": [
+                    [
+                        "u8",
+                        "state",
+                        "0=OFF, 1=LOW, 2=MEDIUM, 3=HIGH"
+                    ]
+                ]
+            }
+        }
     }
 }
