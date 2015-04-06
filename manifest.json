@@ -423,8 +423,27 @@
             }
         }
     },   
+    "pm.storm.svc.fsr": {
+        "id": "0x300a",
+        "name": "FSR",
+        "author": "Jose Oyola, Jochem van Gaalen, Naren Vasanad",
+        "desc": "Gives a stream of FSR data",
+        "attributes": {
+            "pm.storm.attr.fsr.force": {
+                "id": "0x400e",
+                "name": "Force",
+                "format": [
+                    [
+                        "s16",
+                        "f",
+                        "FSR Value"
+                    ]
+                ]
+            }
+        }
+    },    
     "pm.storm.svc.ledsupernight": {
-        "id": "0x3009",
+        "id": "0x300b",
         "name": "LED Supernight",
         "author": "Jose Oyola, Jochem van Gaalen, Naren Vasanad",
         "desc": "LED supernight control",
@@ -475,25 +494,6 @@
 			"Position on the LED strip to clear"
 		    ]
 		]
-            }
-        }
-    },
-    "pm.storm.svc.fsr": {
-        "id": "0x300a",
-        "name": "FSR",
-        "author": "Jose Oyola, Jochem van Gaalen, Naren Vasanad",
-        "desc": "Gives a stream of FSR data",
-        "attributes": {
-            "pm.storm.attr.fsr.force": {
-                "id": "0x400e",
-                "name": "Force",
-                "format": [
-                    [
-                        "s16",
-                        "f",
-                        "FSR Value"
-                    ]
-                ]
             }
         }
     }
