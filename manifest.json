@@ -422,7 +422,7 @@
                 ]
             }
         }
-    },   
+    },
     "pm.storm.svc.fsr": {
         "id": "0x300a",
         "name": "FSR",
@@ -441,7 +441,7 @@
                 ]
             }
         }
-    },    
+    },
     "pm.storm.svc.ledsupernight": {
         "id": "0x300b",
         "name": "LED Supernight",
@@ -488,12 +488,31 @@
                 "id": "0x400d",
                 "name": "Clear specific LED on strip",
                 "format": [
-		    [
-			"u8",
-			"position",
-			"Position on the LED strip to clear"
-		    ]
-		]
+                    [
+                        "u8",
+                        "position",
+                        "Position on the LED strip to clear"
+                    ]
+                ]
+            }
+        }
+    },
+    "pm.storm.svc.echo": {
+        "id": "0x300c",
+        "name": "Echo Service",
+        "author": "Michael Andersen",
+        "desc": "Echo a string reply",
+        "attributes": {
+            "pm.storm.attr.echo.message": {
+                "id": "0x400e",
+                "name": "Echo a message",
+                "format": [
+                    [
+                        "pstr",
+                        "message",
+                        "The message to echo"
+                    ]
+                ]
             }
         }
     }
