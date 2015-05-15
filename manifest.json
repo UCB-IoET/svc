@@ -430,7 +430,7 @@
         "desc": "Gives a stream of FSR data",
         "attributes": {
             "pm.storm.attr.fsr.force": {
-                "id": "0x400e",
+                "id": "0x4013",
                 "name": "Force",
                 "format": [
                     [
@@ -449,7 +449,7 @@
         "desc": "LED supernight control",
         "attributes": {
             "pm.storm.attr.ledsupernight.setled": {
-                "id": "0x400a",
+                "id": "0x4014",
                 "name": "Set a particular LED on the strip",
                 "format": [
                     [
@@ -475,17 +475,17 @@
                 ]
             },
             "pm.storm.attr.ledsupernight.showled": {
-                "id": "0x400b",
+                "id": "0x4015",
                 "name": "Show LED strip",
                 "format": []
             },
             "pm.storm.attr.ledsupernight.clearled": {
-                "id": "0x400c",
+                "id": "0x4016",
                 "name": "Clear LED strip",
                 "format": []
             },
             "pm.storm.attr.ledsupernight.clearspecificled": {
-                "id": "0x400d",
+                "id": "0x4017",
                 "name": "Clear specific LED on strip",
                 "format": [
                     [
@@ -504,13 +504,51 @@
         "desc": "Echo a string reply",
         "attributes": {
             "pm.storm.attr.echo.message": {
-                "id": "0x400e",
+                "id": "0x4018",
                 "name": "Echo a message",
                 "format": [
                     [
                         "pstr",
                         "message",
                         "The message to echo"
+                    ]
+                ]
+            }
+        }
+    },
+    "pm.storm.svc.plugstrip": {
+        "id": "0x300d",
+        "name": "Plug Strip",
+        "author": "Michael Andersen",
+        "desc": "Controllable plug strip",
+        "attributes": {
+            "pm.storm.attr.plugstrip.state": {
+                "id": "0x4019",
+                "name": "Change state",
+                "format": [
+                    [
+                        "u8",
+                        "onoff",
+                        "Zero is off, nonzero is on"
+                    ]
+                ]
+            }
+        }
+    },
+    "pm.storm.svc.lamp": {
+        "id": "0x300e",
+        "name": "Simple Lamp",
+        "author": "Michael Andersen",
+        "desc": "Controllable lamp",
+        "attributes": {
+            "pm.storm.attr.lamp.state": {
+                "id": "0x401a",
+                "name": "Change state",
+                "format": [
+                    [
+                        "u8",
+                        "onoff",
+                        "Zero is off, nonzero is on"
                     ]
                 ]
             }
