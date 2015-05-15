@@ -553,5 +553,35 @@
                 ]
             }
         }
+    },
+    "pm.storm.svc.firestormSensors": {
+        "id": "0x300f",
+        "name": "FireStorm sensing profile",
+        "author": "Gabe Fierro",
+        "desc": "Sensing profile for FireStorm",
+        "attributes": {
+            "pm.storm.attr.firestormSensors.temperature": {
+                "id": "0x401b",
+                "name": "Temperature Reading",
+                "format": [
+                    [
+                        "i8",
+                        "C",
+                        "Temperature in Celsius"
+                    ]
+                ]
+            },
+            "pm.storm.attr.firestormSensors.occupancy": {
+                "id": "0x401c",
+                "name": "Occupancy",
+                "format": [
+                    [
+                        "u8",
+                        "Occupied",
+                        "1 is occupied, 0 is unoccupied"
+                    ]
+                ]
+            }
+        }
     }
 }
