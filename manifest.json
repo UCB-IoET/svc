@@ -565,7 +565,7 @@
                 "name": "Temperature Reading",
                 "format": [
                     [
-                        "i8",
+                        "s8",
                         "C",
                         "Temperature in Celsius"
                     ]
