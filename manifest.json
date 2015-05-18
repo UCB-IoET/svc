@@ -534,7 +534,7 @@
                 ]
             },
             "pm.storm.attr.plugstrip.delayedstate": {
-                "id": "0x4999",
+                "id": "0x401d",
                 "name": "Delayed Change state",
                 "format": [
                     [
