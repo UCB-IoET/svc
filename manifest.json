@@ -594,5 +594,24 @@
                 ]
             }
         }
+    },
+    "pm.storm.svc.bearCast": {
+        "id": "0x3010",
+        "name": "BearCast Ambient Display Service",
+        "author": "Jack He, Robert Bui, Tony Wu, Jack Kolb",
+        "desc": "Post a message to the nearest BearCast display",
+        "attributes": {
+            "pm.storm.attr.bearCast.message": {
+                "id": "0x401e",
+                "name": "Display a message",
+                "format": [
+                    [
+                        "pstr",
+                        "message",
+                        "The message to display"
+                    ]
+                ]
+            }
+        }
     }
 }
