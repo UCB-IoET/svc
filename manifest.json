@@ -532,6 +532,17 @@
                         "Zero is off, nonzero is on"
                     ]
                 ]
+            },
+            "pm.storm.attr.plugstrip.delayedstate": {
+                "id": "0x4999",
+                "name": "Delayed Change state",
+                "format": [
+                    [
+                        "u8",
+                        "onoff",
+                        "Negative is off after specified time, Positive is on after specified time"
+                    ]
+                ]
             }
         }
     },
